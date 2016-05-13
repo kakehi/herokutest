@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html ng-app="myApp2">
+<head>
+	<title>Cocktail List Editor</title>
+
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+	<!-- Optional theme -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
+
+</head>
+<body>
+	<div class="container" ng-controller="AppCtrl2">
+		<h1>Cocktail List Editor</h1>
+
+		<form>
+		  <div class="form-group row">
+		    <label for="inputEmail3" class="col-sm-2 form-control-label">Letter</label>
+		    <div class="col-sm-4">
+		      <input class="form-control" ng-model="cocktail.letter">
+		    </div>
+		  </div>
+		  <div class="form-group row">
+		    <label for="inputPassword3" class="col-sm-2 form-control-label">Cocktail</label>
+		    <div class="col-sm-4">
+		      <input class="form-control" ng-model="cocktail.cocktail">
+		    </div>
+		  </div>
+		  <div class="form-group row">
+		    <label for="inputPassword3" class="col-sm-2 form-control-label">Bar</label>
+		    <div class="col-sm-4">
+		     <input class="form-control" ng-model="cocktail.bar">
+		    </div>
+		  </div>
+		  <div class="form-group row">
+		    <div class="col-sm-offset-2 col-sm-10">
+		      <button class="btn btn-info" ng-click="update()">Update</button>
+		    </div>
+		  </div>
+		</form>
+	</div>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular.min.js"></script>
+	<script src="controllers/controller.js"></script>
+</body>
+</html>

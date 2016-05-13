@@ -1,0 +1,148 @@
+<h1>Cocktail List Editor</h1>
+<a href="/#/">Back</a>
+<form>
+	<div class="form-group" style="border-bottom:solid thick #ccc;">
+		<div class="form-group row">
+			<h2 style="font-size:400%;">{{item.letter}}</h2>
+		</div>
+		<div class="form-group row">
+			<label class="col-sm-2 form-control-label">Letter Image</label>
+			<div class="col-sm-4">
+				<input class="form-control" ng-model="item.letter_image">
+			</div>
+		</div>
+		<div class="form-group row">
+			<label class="col-sm-2 form-control-label">Thumbnail Class</label>
+			<div class="col-sm-4">
+				<input class="form-control" ng-model="item.thumbnail_class">
+			</div>
+		</div>
+		<div class="form-group row">
+			<label class="col-sm-2 form-control-label">Thumbnail Odd</label>
+			<div class="col-sm-4">
+				<input class="form-control" ng-model="item.thumbnail_odd">
+			</div>
+		</div>
+		<div class="form-group row">
+			<label class="col-sm-2 form-control-label">Internal Link</label>
+			<div class="col-sm-4">
+				<input class="form-control" ng-model="item.internal_link">
+			</div>
+		</div>
+	</div>
+
+
+
+	<div class="form-group" style="border-bottom:solid thick #ccc;">
+		<h3>Style</h3>
+		<div class="form-group row">
+			<label class="col-sm-2 form-control-label">Cocktail Position</label>
+			<div class="col-sm-4">
+				<input class="form-control" ng-model="item.style.cocktail_position">
+			</div>
+		</div>
+		<div class="form-group row">
+			<div class="col-sm-4">
+				<label class="form-control-label">Ingredients Text Color</label>
+				<input class="form-control" ng-model="item.style.ingredients_text_color">
+			</div>
+			<div class="col-sm-4">
+				<label class="form-control-label">Triangle 1</label>
+				<input class="form-control" ng-model="item.style.triangle1">
+			</div>
+			<div class="col-sm-4">
+				<label class="form-control-label">Triangle 2</label>
+				<input class="form-control" ng-model="item.style.triangle2">
+			</div>
+		</div>
+	</div>
+
+
+
+	<div class="form-group" style="border-bottom:solid thick #ccc;">
+		<h3>Cocktail</h3>
+		<div class="form-group row">
+			<label class="col-sm-2 form-control-label">Name</label>
+			<div class="col-sm-4">
+			    <input class="form-control" ng-model="item.cocktail.name">
+			</div>
+		</div>
+		<div class="form-group row">
+			<label class="col-sm-2 form-control-label">Silhouette</label>
+			<div class="col-sm-4">
+			    <input class="form-control" ng-model="item.cocktail.silo">
+			</div>
+		</div>
+		<div class="form-group row">
+			<label class="col-sm-2 form-control-label">Description</label>
+			<div class="col-sm-4">
+				<textarea class="form-control" rows="3" ng-model="item.cocktail.description"></textarea>
+			</div>
+		</div>
+		<div class="form-group row">
+			<label class="col-sm-2 form-control-label">How To</label>
+			<div class="col-sm-4">
+				<textarea class="form-control" rows="3" ng-model="item.cocktail.howto"></textarea>
+			</div>
+		</div>
+	</div>
+
+
+
+	<div class="form-group" style="border-bottom:solid thick #ccc;">
+		<h3>Bar</h3>
+		<div class="form-group row">
+			<label class="col-sm-2 form-control-label">Name</label>
+			<div class="col-sm-4">
+			    <input class="form-control" ng-model="item.bar.name">
+			</div>
+		</div>
+		<div class="form-group row">
+			<label class="col-sm-2 form-control-label">Website</label>
+			<div class="col-sm-4">
+			    <input class="form-control" ng-model="item.bar.website">
+			</div>
+		</div>
+		<div class="form-group row">
+			<label class="col-sm-2 form-control-label">Email</label>
+			<div class="col-sm-4">
+			    <input class="form-control" ng-model="item.bar.email">
+			</div>
+		</div>
+		<div class="form-group row">
+			<label class="col-sm-2 form-control-label">Image</label>
+			<div class="col-sm-4">
+			    <input class="form-control" ng-model="item.bar.image">
+			</div>
+		</div>
+		<div class="form-group row">
+			<label class="col-sm-2 form-control-label">Bulb Image</label>
+			<div class="col-sm-4">
+			    <input class="form-control" ng-model="item.bar.bulb_image">
+			</div>
+		</div>
+		<div class="form-group row">
+			<label class="col-sm-2 form-control-label">Address 1</label>
+			<div class="col-sm-4">
+			    <input class="form-control" ng-model="item.bar.address1">
+			</div>
+		</div>
+		<div class="form-group row">
+			<label class="col-sm-2 form-control-label">Address 2</label>
+			<div class="col-sm-4">
+			    <input class="form-control" ng-model="item.bar.address2">
+			</div>
+		</div>
+		<div class="form-group row">
+			<label class="col-sm-2 form-control-label">Phone</label>
+			<div class="col-sm-4">
+			    <input class="form-control" ng-model="item.bar.phone">
+			</div>
+		</div>
+	</div>
+	<div class="form-group row">
+		<div class="col-sm-offset-2 col-sm-10">
+		    <button class="btn btn-info" ng-click="update()">Update</button>
+		</div>
+	</div>
+</form>

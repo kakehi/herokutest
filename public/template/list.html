@@ -1,0 +1,28 @@
+<h1>Cocktail List Editor</h1>
+
+<table class="table">
+	<thead>
+		<tr>
+			<th>Letter</th>
+			<th>Cocktail</th>
+			<th>Bar</th>
+			<th>Action</th>
+			<th>&nbsp;</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td><input class="form-control" ng-model="item.letter"></td>
+			<td><input class="form-control" ng-model="item.cocktail.name"></td>
+			<td><input class="form-control" ng-model="item.bar.name"></td>
+			<td><button class="btn btn-primary" ng-click="addCocktail()">Add Cocktail</button></td>
+		</tr>
+		<tr ng-repeat = "item in cocktaillist">
+			<td>{{item.letter}}</td>
+			<td>{{item.cocktail.name}}</td>
+			<td>{{item.bar.name}}</td>
+			<td><button class="btn btn-danger" ng-click="remove(item._id)">Remove</button></td>
+			<td><a class="btn btn-warning" href="#/cocktail/{{$index}}">Edit</a></td>
+		</tr>
+	</tbody>
+</table>
